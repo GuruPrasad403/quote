@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 2em;
+}
+
+.container .contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 35% 5% 35% 5%;
+    background-color: rgb(182, 196, 201);
+}
+
+.container .contain > * {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container .contain select {
+    border: none;
+    border-radius: 10em;
+    padding: 5px;
+}
+
+.contain input {
+    border: none;
+    background-color: rgb(236, 172, 155);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contain h2 {
+    font-family: 'Kalnia', serif;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Rubik Burned', system-ui;
+}
+
+.contain .addData {
+    font-family: 'Kalnia', serif;
+    text-align: justify;
+}
+
+.container h1 {
+    font-family: 'Foldit', sans-serif;
+    color: rgb(208, 146, 65);
+    font-size: 3em;
+}
+.container .contain span{
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Add your responsive styles for screens with a maximum width of 600px here */
+    .container {
+        margin: 2em;
+    }
+    .container h1{
+        margin: 1em;
+    }
+    .container .contain {
+        border-radius: 5%;
+    }
+
+    .container .contain select {
+        border-radius: 5px;
+    }
+
+    .contain input {
+        border-radius: 5px;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+}
